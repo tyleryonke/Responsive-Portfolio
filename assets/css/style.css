@@ -295,6 +295,10 @@ input {
     	clear: both;
     }
 
+    #fulltop {
+    	position: static;
+    }
+
     #name {
         width: 100%;
         clear: right;
