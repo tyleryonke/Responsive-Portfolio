@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RPS</title>
+</head>
+<body>
+
+<script>
+
+var rpsPlayer = prompt("Choose one: rock, paper or scissors")
+
+var rpsChoices = ["rock", "paper", "scissors"];
+
+var rpsOpponent = rpsChoices[Math.floor(Math.random() * rpsChoices.length)];
+
+if (rpsPlayer=="rock") {
+	if (rpsOpponent=="rock") {alert("Opponent picked rock: Tie game!")}
+	
+	if (rpsOpponent=="paper") {alert("Opponent picked paper: You lose!")}
+
+	if (rpsOpponent=="scissors") {alert("Opponent picked scissors: You win!")}
+
+	location.reload();
+}
+
+else if (rpsPlayer=="paper") {
+	if (rpsOpponent=="rock") {alert("Opponent picked rock: You win!")}
+	
+	if (rpsOpponent=="paper") {alert("Opponent picked paper: Tie game!")}
+
+	if (rpsOpponent=="scissors") {alert("Opponent picked scissors: You lose!")}
+
+	location.reload();
+}
+
+else if (rpsPlayer=="scissors") {
+	if (rpsOpponent=="rock") {alert("Opponent picked rock: You lose!")}
+	
+	if (rpsOpponent=="paper") {alert("Opponent picked paper: You win!")}
+
+	if (rpsOpponent=="scissors") {alert("Opponent picked scissors: Tie game!")}
+
+	location.reload();
+}
+
+else {alert("Invalid input, please refresh, then select a valid choice")
+}
+
+</script>
+	
+</body>
+</html>
